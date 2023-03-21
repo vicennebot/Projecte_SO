@@ -1,0 +1,10 @@
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\bin\Debug\PARCHIS_BUENO.exe.config
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\bin\Debug\PARCHIS_BUENO.exe
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\bin\Debug\PARCHIS_BUENO.pdb
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.csproj.AssemblyReference.cache
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.Form1.resources
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.Properties.Resources.resources
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.csproj.GenerateResource.cache
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.csproj.CoreCompileInputs.cache
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.exe
+C:\Users\vicen\OneDrive\Escritorio\UNI\4Q\SO\PARCHIS_BUENO\obj\Debug\PARCHIS_BUENO.pdb
