@@ -15,6 +15,8 @@ namespace PARCHIS_BUENO
     public partial class Form1 : Form
     {
         Socket server;
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +24,7 @@ namespace PARCHIS_BUENO
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Barcelona_CheckedChanged(object sender, EventArgs e)
@@ -78,6 +80,41 @@ namespace PARCHIS_BUENO
 
 
                 }
+                if(Login.Checked)
+                {
+                    string dadeslogin = Convert.ToString(textBox2.Text);
+                    string mensaje = "4/" + dadeslogin;
+                    byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+                    server.Send(msg);
+
+                    byte[] msg2 = new byte[80];
+                    server.Receive(msg2);
+                    mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
+                    MessageBox.Show(mensaje);
+                }
+                if(Registrarse.Checked)
+                {
+                    string dadesregistre = Convert.ToString(textBox2.Text);
+                    string mensaje = "5/" + dadesregistre;
+                    byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+                    server.Send(msg);
+
+                    byte[] msg2 = new byte[80];
+                    server.Receive(msg2);
+                    mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
+                    MessageBox.Show(mensaje);
+                }
+                if(mostrarconectados.Checked)
+                {
+                    string mensaje = "6/";
+                    byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+                    server.Send(msg);
+
+                    byte[] msg2 = new byte[80];
+                    server.Receive(msg2);
+                    mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
+                    MessageBox.Show(mensaje);
+                }
                 else
                 {
                     int idpartida = Convert.ToInt32(textBox2.Text);
@@ -101,6 +138,34 @@ namespace PARCHIS_BUENO
                 return;
             }
 
+
+        }
+        private void tablero_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.Text = e.X.ToString() + "," + e.Y.ToString();
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registrarse_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mostrarconectados_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
